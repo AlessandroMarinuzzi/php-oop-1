@@ -61,7 +61,7 @@ class Movie{
                 <span class="year">Release Year: <?= $movie->year?></span>
                 <span class="genre">Genre: <?= $movie->genre ?></span>
                 <span class="price">Original Price: £<?= $movie->price ?></span>
-                <span class="discount">Current Price: £<?= $movie->getDiscount($movie->price) ?></span>
+                <span class="discount">Current Price: £<?=number_format((float)$movie->getDiscount($movie->price), 2, '.', ''); $movie->getDiscount($movie->price) ?></span>
             </div>
          <?php } ?>
     </div>
