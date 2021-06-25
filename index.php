@@ -57,11 +57,11 @@ class Movie{
         <?php foreach($movies as $movie){?>
             <div class="movie">
                 <h2 class="title">Title: <?= $movie->title?></h2>
-                <p class="plot">Plot: <?= $movie->plot?></p>
-                <span class="year">Release Year: <?= $movie->year?></span>
-                <span class="genre">Genre: <?= $movie->genre ?></span>
-                <span class="price">Original Price: £<?= $movie->price ?></span>
-                <span class="discount">Current Price: £<?=number_format((float)$movie->getDiscount($movie->price), 2, '.', ''); $movie->getDiscount($movie->price) ?></span>
+                <p class="plot"><strong>Plot: </strong><?= $movie->plot?></p>
+                <span class="year"><strong>Release Year: </strong>Release Year: <?= $movie->year?></span>
+                <span class="genre"><strong>Genre: </strong><?= $movie->genre ?></span>
+                <span class="price"><strong>Original Price: </strong>Original Price: £<?= $movie->price ?></span>
+                <span class="discount"><strong>Current Price: </strong>£<?=number_format((float)$movie->getDiscount($movie->price), 2, '.', ''); $movie->getDiscount($movie->price) ?></span>
             </div>
          <?php } ?>
     </div>

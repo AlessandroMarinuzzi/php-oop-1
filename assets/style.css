@@ -22,7 +22,13 @@ body{
 .movie{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: cadetblue;
     padding: 15px;
     border-radius: 2rem;
+}
+.price{
+    color: red;
+}
+.discount{
+    color: green;
 }
